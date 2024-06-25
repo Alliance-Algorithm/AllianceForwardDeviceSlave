@@ -1,0 +1,35 @@
+>>> cc
+
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:109:24: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+  109 |     strcpy(send_buffer + strlen("Alliance Forwarding Device"), buf);
+      |            ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        unsigned char *
+In file included from USB_DEVICE/Target/usbd_conf.h:33,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:29,
+                 from USB_DEVICE/App/usb_device.h:32,
+                 from ./Core/Src/main.c:23:
+c:\users\17802\.eide\tools\gcc_arm\arm-none-eabi\include\string.h:38:16: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                ^
+./Core/Src/main.c:110:45: warning: passing argument 2 of 'USBD_AUDIO_fops_FS.Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+  110 |     USBD_AUDIO_fops_FS.Receive(recv_buffer, &len);
+      |                                             ^~~~
+      |                                             |
+      |                                             int *
+./Core/Src/main.c:110:45: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'int *'
+./Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.c: In function 'USBD_AUDIO_DataOut':
+./Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.c:712:12: warning: unused variable 'PacketSize' [-Wunused-variable]
+  712 |   uint16_t PacketSize;
+      |            ^~~~~~~~~~
+
+
+
+
+>>> ld
+
+Memory region         Used Size  Region Size  %age Used
+          CCMRAM:          0 GB        64 KB      0.00%
+             RAM:       29880 B       128 KB     22.80%
+           FLASH:       35372 B         1 MB      3.37%

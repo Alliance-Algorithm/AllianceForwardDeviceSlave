@@ -1,0 +1,3 @@
+tool: GCC
+fileName: AllianceForwardingDevice.map
+elfName: AllianceForwardingDevice.elf

@@ -1,0 +1,6 @@
+r
+halt
+loadfile "c:\Users\17802\source\repos\AllianceForwardingDevice\build\Debug\AllianceForwardingDevice.hex"
+r
+go
+exit

@@ -1,0 +1,1270 @@
+[2024-06-24 04:36:02]	[done]
+	build successfully !
+
+[2024-06-24 04:36:52]	[done]
+	build successfully !
+
+[2024-06-24 04:37:12]	[done]
+	build successfully !
+
+[2024-06-24 06:17:26]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\Core\Src\main.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Core/Src/main.o -MMD ./Core/Src/main.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c:46:10: fatal error: usbd_customhid.h: No such file or directory
+   46 | #include "usbd_customhid.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+./Core/Src/main.c:28:10: fatal error: usbd_audio_if.h: No such file or directory
+   28 | #include "usbd_audio_if.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+[2024-06-24 06:18:53]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\Core\Src\main.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Core/Src/main.o -MMD ./Core/Src/main.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./Core/Src/main.c:28:10: fatal error: usbd_audio_if.h: No such file or directory
+   28 | #include "usbd_audio_if.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+
+[2024-06-24 06:32:49]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\USB_DEVICE\App\usb_device.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/USB_DEVICE/App/usb_device.o -MMD ./USB_DEVICE/App/usb_device.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./USB_DEVICE/App/usb_device.c:27:10: fatal error: usbd_custom_hid_if.h: No such file or directory
+   27 | #include "usbd_custom_hid_if.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+
+[2024-06-24 06:48:14]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\USB_DEVICE\App\usbd_afd_if.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/USB_DEVICE/App/usbd_afd_if.o -MMD ./USB_DEVICE/App/usbd_afd_if.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./USB_DEVICE/App/usbd_afd_if.c:142:9: warning: initialization of 'int8_t (*)(uint8_t,  uint16_t)' {aka 'signed char (*)(unsigned char,  short unsigned int)'} from incompatible pointer type 'int8_t (*)(uint8_t *, uint16_t)' {aka 'signed char (*)(unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+  142 |         AFD_SendData_FS,
+      |         ^~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:142:9: note: (near initialization for 'USBD_CustomHID_fops_FS.SendData')
+./USB_DEVICE/App/usbd_afd_if.c:143:9: warning: initialization of 'uint8_t * (*)(uint16_t *)' {aka 'unsigned char * (*)(short unsigned int *)'} from incompatible pointer type 'int8_t * (*)(uint16_t *)' {aka 'signed char * (*)(short unsigned int *)'} [-Wincompatible-pointer-types]
+  143 |         AFD_ReceiveData_FS};
+      |         ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:143:9: note: (near initialization for 'USBD_CustomHID_fops_FS.ReceiveData')
+./USB_DEVICE/App/usbd_afd_if.c:209:15: error: conflicting types for 'AFD_ReceiveData_FS'
+  209 | static int8_t AFD_ReceiveData_FS(uint8_t *buf, uint8_t *Length)
+      |               ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:130:16: note: previous declaration of 'AFD_ReceiveData_FS' was here
+  130 | static int8_t *AFD_ReceiveData_FS(uint16_t *Length);
+      |                ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c: In function 'AFD_ReceiveData_FS':
+./USB_DEVICE/App/usbd_afd_if.c:211:27: error: invalid type argument of '->' (have 'USBD_HandleTypeDef' {aka 'struct _USBD_HandleTypeDef'})
+  211 |   strcpy(buf, hUsbDeviceFS->pData);
+      |                           ^~
+./USB_DEVICE/App/usbd_afd_if.c:211:10: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+  211 |   strcpy(buf, hUsbDeviceFS->pData);
+      |          ^~~
+      |          |
+      |          uint8_t * {aka unsigned char *}
+In file included from USB_DEVICE/Target/usbd_conf.h:33,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:28,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:28,
+                 from Middlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc/usbd_customhid.h:29,
+                 from ./USB_DEVICE/App/usbd_afd_if.h:31,
+                 from ./USB_DEVICE/App/usbd_afd_if.c:22:
+c:\users\17802\.eide\tools\gcc_arm\arm-none-eabi\include\string.h:38:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                ^
+./USB_DEVICE/App/usbd_afd_if.c: At top level:
+./USB_DEVICE/App/usbd_afd_if.c:130:16: warning: 'AFD_ReceiveData_FS' used but never defined
+  130 | static int8_t *AFD_ReceiveData_FS(uint16_t *Length);
+      |                ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:209:15: warning: 'AFD_ReceiveData_FS' defined but not used [-Wunused-function]
+  209 | static int8_t AFD_ReceiveData_FS(uint8_t *buf, uint8_t *Length)
+      |               ^~~~~~~~~~~~~~~~~~
+
+[2024-06-24 06:48:22]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\USB_DEVICE\App\usbd_afd_if.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/USB_DEVICE/App/usbd_afd_if.o -MMD ./USB_DEVICE/App/usbd_afd_if.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./USB_DEVICE/App/usbd_afd_if.c:142:9: warning: initialization of 'int8_t (*)(uint8_t,  uint16_t)' {aka 'signed char (*)(unsigned char,  short unsigned int)'} from incompatible pointer type 'int8_t (*)(uint8_t *, uint16_t)' {aka 'signed char (*)(unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+  142 |         AFD_SendData_FS,
+      |         ^~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:142:9: note: (near initialization for 'USBD_CustomHID_fops_FS.SendData')
+./USB_DEVICE/App/usbd_afd_if.c:143:9: warning: initialization of 'uint8_t * (*)(uint16_t *)' {aka 'unsigned char * (*)(short unsigned int *)'} from incompatible pointer type 'int8_t * (*)(uint16_t *)' {aka 'signed char * (*)(short unsigned int *)'} [-Wincompatible-pointer-types]
+  143 |         AFD_ReceiveData_FS};
+      |         ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:143:9: note: (near initialization for 'USBD_CustomHID_fops_FS.ReceiveData')
+./USB_DEVICE/App/usbd_afd_if.c:209:15: error: conflicting types for 'AFD_ReceiveData_FS'
+  209 | static int8_t AFD_ReceiveData_FS(uint8_t *buf, uint8_t *Length)
+      |               ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:130:16: note: previous declaration of 'AFD_ReceiveData_FS' was here
+  130 | static int8_t *AFD_ReceiveData_FS(uint16_t *Length);
+      |                ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c: In function 'AFD_ReceiveData_FS':
+./USB_DEVICE/App/usbd_afd_if.c:211:10: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+  211 |   strcpy(buf, hUsbDeviceFS.pData);
+      |          ^~~
+      |          |
+      |          uint8_t * {aka unsigned char *}
+In file included from USB_DEVICE/Target/usbd_conf.h:33,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:28,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:28,
+                 from Middlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc/usbd_customhid.h:29,
+                 from ./USB_DEVICE/App/usbd_afd_if.h:31,
+                 from ./USB_DEVICE/App/usbd_afd_if.c:22:
+c:\users\17802\.eide\tools\gcc_arm\arm-none-eabi\include\string.h:38:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                ^
+./USB_DEVICE/App/usbd_afd_if.c: At top level:
+./USB_DEVICE/App/usbd_afd_if.c:130:16: warning: 'AFD_ReceiveData_FS' used but never defined
+  130 | static int8_t *AFD_ReceiveData_FS(uint16_t *Length);
+      |                ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:209:15: warning: 'AFD_ReceiveData_FS' defined but not used [-Wunused-function]
+  209 | static int8_t AFD_ReceiveData_FS(uint8_t *buf, uint8_t *Length)
+      |               ^~~~~~~~~~~~~~~~~~
+
+[2024-06-24 06:48:48]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\USB_DEVICE\App\usbd_afd_if.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/USB_DEVICE/App/usbd_afd_if.o -MMD ./USB_DEVICE/App/usbd_afd_if.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./USB_DEVICE/App/usbd_afd_if.c:142:9: warning: initialization of 'int8_t (*)(uint8_t,  uint16_t)' {aka 'signed char (*)(unsigned char,  short unsigned int)'} from incompatible pointer type 'int8_t (*)(uint8_t *, uint16_t)' {aka 'signed char (*)(unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+  142 |         AFD_SendData_FS,
+      |         ^~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:142:9: note: (near initialization for 'USBD_CustomHID_fops_FS.SendData')
+./USB_DEVICE/App/usbd_afd_if.c:143:9: warning: initialization of 'uint8_t * (*)(uint16_t *)' {aka 'unsigned char * (*)(short unsigned int *)'} from incompatible pointer type 'int8_t (*)(uint8_t *, uint16_t *)' {aka 'signed char (*)(unsigned char *, short unsigned int *)'} [-Wincompatible-pointer-types]
+  143 |         AFD_ReceiveData_FS};
+      |         ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:143:9: note: (near initialization for 'USBD_CustomHID_fops_FS.ReceiveData')
+./USB_DEVICE/App/usbd_afd_if.c:209:15: error: conflicting types for 'AFD_ReceiveData_FS'
+  209 | static int8_t AFD_ReceiveData_FS(uint8_t *buf, uint8_t *Length)
+      |               ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:130:15: note: previous declaration of 'AFD_ReceiveData_FS' was here
+  130 | static int8_t AFD_ReceiveData_FS(uint8_t *pbuf, uint16_t *Length);
+      |               ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c: In function 'AFD_ReceiveData_FS':
+./USB_DEVICE/App/usbd_afd_if.c:211:10: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+  211 |   strcpy(buf, hUsbDeviceFS.pData);
+      |          ^~~
+      |          |
+      |          uint8_t * {aka unsigned char *}
+In file included from USB_DEVICE/Target/usbd_conf.h:33,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:28,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:28,
+                 from Middlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc/usbd_customhid.h:29,
+                 from ./USB_DEVICE/App/usbd_afd_if.h:31,
+                 from ./USB_DEVICE/App/usbd_afd_if.c:22:
+c:\users\17802\.eide\tools\gcc_arm\arm-none-eabi\include\string.h:38:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                ^
+./USB_DEVICE/App/usbd_afd_if.c: At top level:
+./USB_DEVICE/App/usbd_afd_if.c:130:15: warning: 'AFD_ReceiveData_FS' used but never defined
+  130 | static int8_t AFD_ReceiveData_FS(uint8_t *pbuf, uint16_t *Length);
+      |               ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:209:15: warning: 'AFD_ReceiveData_FS' defined but not used [-Wunused-function]
+  209 | static int8_t AFD_ReceiveData_FS(uint8_t *buf, uint8_t *Length)
+      |               ^~~~~~~~~~~~~~~~~~
+
+[2024-06-24 06:49:00]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\USB_DEVICE\App\usbd_afd_if.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/USB_DEVICE/App/usbd_afd_if.o -MMD ./USB_DEVICE/App/usbd_afd_if.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./USB_DEVICE/App/usbd_afd_if.c:142:9: warning: initialization of 'int8_t (*)(uint8_t,  uint16_t)' {aka 'signed char (*)(unsigned char,  short unsigned int)'} from incompatible pointer type 'int8_t (*)(uint8_t *, uint16_t)' {aka 'signed char (*)(unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+  142 |         AFD_SendData_FS,
+      |         ^~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:142:9: note: (near initialization for 'USBD_CustomHID_fops_FS.SendData')
+./USB_DEVICE/App/usbd_afd_if.c:143:9: warning: initialization of 'uint8_t * (*)(uint16_t *)' {aka 'unsigned char * (*)(short unsigned int *)'} from incompatible pointer type 'int8_t (*)(uint8_t *, uint16_t *)' {aka 'signed char (*)(unsigned char *, short unsigned int *)'} [-Wincompatible-pointer-types]
+  143 |         AFD_ReceiveData_FS};
+      |         ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:143:9: note: (near initialization for 'USBD_CustomHID_fops_FS.ReceiveData')
+./USB_DEVICE/App/usbd_afd_if.c: In function 'AFD_ReceiveData_FS':
+./USB_DEVICE/App/usbd_afd_if.c:211:10: error: 'buf' undeclared (first use in this function); did you mean 'pbuf'?
+  211 |   strcpy(buf, hUsbDeviceFS.pData);
+      |          ^~~
+      |          pbuf
+./USB_DEVICE/App/usbd_afd_if.c:211:10: note: each undeclared identifier is reported only once for each function it appears in
+
+[2024-06-24 06:49:11]	[done]
+	build successfully !
+
+[2024-06-24 06:49:20]	[done]
+	build successfully !
+
+[2024-06-24 07:03:27]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\Middlewares\ST\STM32_USB_Device_Library\Class\AllianceForwarding\Src\usbd_customhid.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Middlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Src/usbd_customhid.o -MMD ./Middlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Src/usbd_customhid.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./Middlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Src/usbd_customhid.c:169:9: error: 'AFD_FS_BINTERVAL' undeclared here (not in a function)
+  169 |         AFD_FS_BINTERVAL, /* bInterval: Polling Interval */
+      |         ^~~~~~~~~~~~~~~~
+
+[2024-06-24 07:04:05]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+c:/users/17802/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/.obj/USB_DEVICE/App/usbd_custom_hid_if.o:c:\Users\17802\source\repos\AllianceForwardingDevice/./USB_DEVICE/App/usbd_custom_hid_if.c:133: multiple definition of `USBD_CustomHID_fops_FS'; ./build/Debug/.obj/USB_DEVICE/App/usbd_afd_if.o:c:\Users\17802\source\repos\AllianceForwardingDevice/./USB_DEVICE/App/usbd_afd_if.c:136: first defined here
+Memory region         Used Size  Region Size  %age Used
+          CCMRAM:          0 GB        64 KB      0.00%
+             RAM:       28624 B       128 KB     21.84%
+           FLASH:       35516 B         1 MB      3.39%
+collect2.exe: error: ld returned 1 exit status
+
+
+[2024-06-24 07:05:41]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+c:/users/17802/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/.obj/USB_DEVICE/App/usbd_custom_hid_if.o:c:\Users\17802\source\repos\AllianceForwardingDevice/./USB_DEVICE/App/usbd_custom_hid_if.c:133: multiple definition of `USBD_CustomHID_fops_FS'; ./build/Debug/.obj/USB_DEVICE/App/usbd_afd_if.o:c:\Users\17802\source\repos\AllianceForwardingDevice/./USB_DEVICE/App/usbd_afd_if.c:136: first defined here
+Memory region         Used Size  Region Size  %age Used
+          CCMRAM:          0 GB        64 KB      0.00%
+             RAM:       30664 B       128 KB     23.39%
+           FLASH:       36576 B         1 MB      3.49%
+collect2.exe: error: ld returned 1 exit status
+
+
+[2024-06-24 07:05:44]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+c:/users/17802/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/ld.exe: ./build/Debug/.obj/USB_DEVICE/App/usbd_custom_hid_if.o:c:\Users\17802\source\repos\AllianceForwardingDevice/./USB_DEVICE/App/usbd_custom_hid_if.c:133: multiple definition of `USBD_CustomHID_fops_FS'; ./build/Debug/.obj/USB_DEVICE/App/usbd_afd_if.o:c:\Users\17802\source\repos\AllianceForwardingDevice/./USB_DEVICE/App/usbd_afd_if.c:136: first defined here
+Memory region         Used Size  Region Size  %age Used
+          CCMRAM:          0 GB        64 KB      0.00%
+             RAM:       30664 B       128 KB     23.39%
+           FLASH:       36576 B         1 MB      3.49%
+collect2.exe: error: ld returned 1 exit status
+
+
+[2024-06-24 07:06:38]	[done]
+	build successfully !
+
+[2024-06-24 07:08:43]	[done]
+	build successfully !
+
+[2024-06-24 07:10:16]	[done]
+	build successfully !
+
+[2024-06-24 07:11:56]	[done]
+	build successfully !
+
+[2024-06-24 07:15:02]	[done]
+	build successfully !
+
+[2024-06-24 07:15:11]	[done]
+	build successfully !
+
+[2024-06-24 07:20:24]	[done]
+	build successfully !
+
+[2024-06-24 07:26:08]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\USB_DEVICE\App\usbd_afd_if.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/USB_DEVICE/App/usbd_afd_if.o -MMD ./USB_DEVICE/App/usbd_afd_if.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./USB_DEVICE/App/usbd_afd_if.c:142:9: warning: initialization of 'int8_t (*)(uint8_t,  uint16_t)' {aka 'signed char (*)(unsigned char,  short unsigned int)'} from incompatible pointer type 'int8_t (*)(uint8_t *, uint16_t)' {aka 'signed char (*)(unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+  142 |         AFD_SendData_FS,
+      |         ^~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:142:9: note: (near initialization for 'USBD_CustomHID_fops_FS.SendData')
+./USB_DEVICE/App/usbd_afd_if.c:143:9: warning: initialization of 'uint8_t * (*)(uint16_t *)' {aka 'unsigned char * (*)(short unsigned int *)'} from incompatible pointer type 'int8_t (*)(uint8_t *, uint16_t *)' {aka 'signed char (*)(unsigned char *, short unsigned int *)'} [-Wincompatible-pointer-types]
+  143 |         AFD_ReceiveData_FS};
+      |         ^~~~~~~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:143:9: note: (near initialization for 'USBD_CustomHID_fops_FS.ReceiveData')
+./USB_DEVICE/App/usbd_afd_if.c: In function 'AFD_ReceiveData_FS':
+./USB_DEVICE/App/usbd_afd_if.c:211:50: error: request for member 'Report_buf' in something not a structure or union
+  211 |   strcpy(pbuf, (uint8_t *)hUsbDeviceFS.pClassData.Report_buf);
+      |                                                  ^
+./USB_DEVICE/App/usbd_afd_if.c:211:10: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+  211 |   strcpy(pbuf, (uint8_t *)hUsbDeviceFS.pClassData.Report_buf);
+      |          ^~~~
+      |          |
+      |          uint8_t * {aka unsigned char *}
+In file included from USB_DEVICE/Target/usbd_conf.h:33,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:28,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:28,
+                 from Middlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc/usbd_customhid.h:29,
+                 from ./USB_DEVICE/App/usbd_afd_if.h:31,
+                 from ./USB_DEVICE/App/usbd_afd_if.c:22:
+c:\users\17802\.eide\tools\gcc_arm\arm-none-eabi\include\string.h:38:16: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   38 | char  *strcpy (char *__restrict, const char *__restrict);
+      |                ^
+./USB_DEVICE/App/usbd_afd_if.c:212:19: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  212 |   Length = strlen(pbuf);
+      |                   ^~~~
+      |                   |
+      |                   uint8_t * {aka unsigned char *}
+In file included from USB_DEVICE/Target/usbd_conf.h:33,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:28,
+                 from Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:28,
+                 from Middlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc/usbd_customhid.h:29,
+                 from ./USB_DEVICE/App/usbd_afd_if.h:31,
+                 from ./USB_DEVICE/App/usbd_afd_if.c:22:
+c:\users\17802\.eide\tools\gcc_arm\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   41 | size_t  strlen (const char *);
+      |                 ^~~~~~~~~~~~
+./USB_DEVICE/App/usbd_afd_if.c:212:10: warning: assignment to 'uint16_t *' {aka 'short unsigned int *'} from 'size_t' {aka 'unsigned int'} makes pointer from integer without a cast [-Wint-conversion]
+  212 |   Length = strlen(pbuf);
+      |          ^
+
+[2024-06-24 07:30:30]	[done]
+	build successfully !
+
+[2024-06-24 07:31:51]	[done]
+	build successfully !
+
+[2024-06-24 07:35:25]	[done]
+	build successfully !
+
+[2024-06-24 07:35:42]	[done]
+	build successfully !
+
+[2024-06-24 07:37:44]	[done]
+	build successfully !
+
+[2024-06-24 07:39:33]	[done]
+	build successfully !
+
+[2024-06-24 07:41:26]	[done]
+	build successfully !
+
+[2024-06-24 07:43:47]	[done]
+	build successfully !
+
+[2024-06-24 07:46:26]	[done]
+	build successfully !
+
+[2024-06-24 07:48:05]	[done]
+	build successfully !
+
+[2024-06-24 07:50:06]	[done]
+	build successfully !
+
+[2024-06-24 07:50:59]	[done]
+	build successfully !
+
+[2024-06-24 07:52:11]	[done]
+	build successfully !
+
+[2024-06-24 07:53:08]	[done]
+	build successfully !
+
+[2024-06-24 07:53:19]	[done]
+	build successfully !
+
+[2024-06-24 07:54:13]	[done]
+	build successfully !
+
+[2024-06-24 08:00:51]	[done]
+	build successfully !
+
+[2024-06-24 08:01:43]	[done]
+	build successfully !
+
+[2024-06-24 08:02:00]	[done]
+	build successfully !
+
+[2024-06-24 08:03:13]	[done]
+	build successfully !
+
+[2024-06-24 08:03:58]	[done]
+	build successfully !
+
+[2024-06-24 08:04:20]	[done]
+	build successfully !
+
+[2024-06-24 08:05:34]	[done]
+	build successfully !
+
+[2024-06-24 08:07:39]	[done]
+	build successfully !
+
+[2024-06-24 08:09:18]	[done]
+	build successfully !
+
+[2024-06-24 08:10:34]	[done]
+	build successfully !
+
+[2024-06-24 08:11:03]	[done]
+	build successfully !
+
+[2024-06-24 08:20:38]	[done]
+	build successfully !
+
+[2024-06-24 08:22:26]	[done]
+	build successfully !
+
+[2024-06-24 08:23:15]	[done]
+	build successfully !
+
+[2024-06-24 08:23:57]	[done]
+	build successfully !
+
+[2024-06-24 08:30:18]	[done]
+	build successfully !
+
+[2024-06-24 08:31:29]	[done]
+	build successfully !
+
+[2024-06-24 08:45:06]	[done]
+	build successfully !
+
+[2024-06-24 08:46:50]	[done]
+	build successfully !
+
+[2024-06-24 08:47:26]	[done]
+	build successfully !
+
+[2024-06-24 08:50:31]	[done]
+	build successfully !
+
+[2024-06-24 08:51:46]	[done]
+	build successfully !
+
+[2024-06-24 08:53:38]	[done]
+	build successfully !
+
+[2024-06-24 09:03:05]	[done]
+	build successfully !
+
+[2024-06-24 09:04:45]	[done]
+	build successfully !
+
+[2024-06-24 09:06:26]	[done]
+	build successfully !
+
+[2024-06-24 09:08:46]	[done]
+	build successfully !
+
+[2024-06-24 09:13:03]	[done]
+	build successfully !
+
+[2024-06-24 09:18:41]	[done]
+	build successfully !
+
+[2024-06-24 09:19:17]	[done]
+	build successfully !
+
+[2024-06-24 09:20:09]	[done]
+	build successfully !
+
+[2024-06-24 09:21:56]	[done]
+	build successfully !
+
+[2024-06-24 09:22:34]	[done]
+	build successfully !
+
+[2024-06-24 09:22:44]	[done]
+	build successfully !
+
+[2024-06-24 09:23:34]	[done]
+	build successfully !
+
+[2024-06-24 09:24:09]	[done]
+	build successfully !
+
+[2024-06-24 09:28:58]	[done]
+	build successfully !
+
+[2024-06-24 09:33:34]	[done]
+	build successfully !
+
+[2024-06-24 09:34:37]	[done]
+	build successfully !
+
+[2024-06-24 09:34:51]	[done]
+	build successfully !
+
+[2024-06-24 09:35:04]	[done]
+	build successfully !
+
+[2024-06-24 09:35:19]	[done]
+	build successfully !
+
+[2024-06-24 09:38:09]	[done]
+	build successfully !
+
+[2024-06-24 09:38:55]	[done]
+	build successfully !
+
+[2024-06-24 09:40:17]	[done]
+	build successfully !
+
+[2024-06-24 10:15:56]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\Core\Src\main.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Core/Src/main.o -MMD ./Core/Src/main.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./Core/Src/main.c:28:10: fatal error: usbd_afd_if.h: No such file or directory
+   28 | #include "usbd_afd_if.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+
+[2024-06-24 10:25:32]	[done]
+	build successfully !
+
+[2024-06-24 10:27:18]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\Core\Src\main.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Core/Src/main.o -MMD ./Core/Src/main.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./Core/Src/main.c: In function 'main':
+./Core/Src/main.c:106:23: error: 'USBD_AUDIO_ItfTypeDef' has no member named 'HAL_Delay'
+  106 |     USBD_AUDIO_fops_FS.
+      |                       ^
+./Core/Src/main.c:99:7: warning: unused variable 'k' [-Wunused-variable]
+   99 |   int k = 0;
+      |       ^
+./Core/Src/main.c:73:7: warning: unused variable 'len' [-Wunused-variable]
+   73 |   int len = 88;
+      |       ^~~
+./Core/Src/main.c:72:17: warning: unused variable 'send_buffer' [-Wunused-variable]
+   72 |   unsigned char send_buffer[1023] = "Alliance Forwarding Device";
+      |                 ^~~~~~~~~~~
+./Core/Src/main.c:71:17: warning: unused variable 'recv_buffer' [-Wunused-variable]
+   71 |   unsigned char recv_buffer[1023];
+      |                 ^~~~~~~~~~~
+
+[2024-06-24 10:27:50]	[done]
+	build successfully !
+
+[2024-06-24 10:28:20]	[done]
+	build successfully !
+
+[2024-06-24 10:30:28]	[done]
+	build successfully !
+
+[2024-06-24 10:33:40]	[done]
+	build successfully !
+
+[2024-06-24 10:34:29]	[done]
+	build successfully !
+
+[2024-06-24 10:36:37]	[done]
+	build successfully !
+
+[2024-06-24 10:38:31]	[done]
+	build successfully !
+
+[2024-06-24 10:38:53]	[done]
+	build successfully !
+
+[2024-06-24 10:39:44]	[done]
+	build successfully !
+
+[2024-06-24 10:41:08]	[done]
+	build successfully !
+
+[2024-06-24 10:43:26]	[done]
+	build successfully !
+
+[2024-06-24 10:45:02]	[done]
+	build successfully !
+
+[2024-06-24 10:45:41]	[done]
+	build successfully !
+
+[2024-06-24 10:45:51]	[done]
+	build successfully !
+
+[2024-06-24 10:46:14]	[done]
+	build successfully !
+
+[2024-06-24 10:47:09]	[done]
+	build successfully !
+
+[2024-06-24 10:51:19]	[done]
+	build successfully !
+
+[2024-06-24 10:52:22]	[done]
+	build successfully !
+
+[2024-06-24 10:53:55]	[done]
+	build successfully !
+
+[2024-06-24 10:54:56]	[done]
+	build successfully !
+
+[2024-06-24 10:58:11]	[done]
+	build successfully !
+
+[2024-06-24 10:59:42]	[done]
+	build successfully !
+
+[2024-06-24 11:01:59]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\Middlewares\ST\STM32_USB_Device_Library\Class\AUDIO\Src\usbd_audio.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.o -MMD ./Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.c: In function 'USBD_AUDIO_DataIn':
+./Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.c:505:27: error: 'haudio' undeclared (first use in this function)
+  505 |                          &haudio->tx_buffer[haudio->tx_ptr],
+      |                           ^~~~~~
+./Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.c:505:27: note: each undeclared identifier is reported only once for each function it appears in
+
+[2024-06-24 11:02:04]	[done]
+	build successfully !
+
+[2024-06-24 11:03:12]	[done]
+	build successfully !
+
+[2024-06-24 11:04:58]	[done]
+	build successfully !
+
+[2024-06-24 11:05:36]	[done]
+	build successfully !
+
+[2024-06-24 11:06:12]	[done]
+	build successfully !
+
+[2024-06-24 11:07:06]	[done]
+	build successfully !
+
+[2024-06-24 11:08:07]	[done]
+	build successfully !
+
+[2024-06-24 11:08:57]	[done]
+	build successfully !
+
+[2024-06-24 11:11:30]	[done]
+	build successfully !
+
+[2024-06-24 11:12:07]	[done]
+	build successfully !
+
+[2024-06-24 11:14:59]	[done]
+	build successfully !
+
+[2024-06-24 11:16:39]	[done]
+	build successfully !
+
+[2024-06-24 11:20:16]	[done]
+	build successfully !
+
+[2024-06-24 11:21:12]	[done]
+	build successfully !
+
+[2024-06-24 11:22:08]	[done]
+	build successfully !
+
+[2024-06-24 11:22:37]	[done]
+	build successfully !
+
+[2024-06-24 11:22:45]	[done]
+	build successfully !
+
+[2024-06-24 11:23:35]	[done]
+	build successfully !
+
+[2024-06-24 11:25:51]	[done]
+	build successfully !
+
+[2024-06-24 11:26:47]	[done]
+	build successfully !
+
+[2024-06-24 11:27:31]	[done]
+	build successfully !
+
+[2024-06-24 11:28:19]	[done]
+	build successfully !
+
+[2024-06-24 11:29:38]	[done]
+	build successfully !
+
+[2024-06-24 11:30:27]	[done]
+	build successfully !
+
+[2024-06-24 11:31:45]	[done]
+	build successfully !
+
+[2024-06-24 11:33:21]	[done]
+	build successfully !
+
+[2024-06-24 11:37:03]	[done]
+	build successfully !
+
+[2024-06-24 11:38:22]	[done]
+	build successfully !
+
+[2024-06-24 11:40:21]	[done]
+	build successfully !
+
+[2024-06-24 11:40:57]	[done]
+	build successfully !
+
+[2024-06-24 11:42:59]	[done]
+	build successfully !
+
+[2024-06-24 11:45:10]	[done]
+	build successfully !
+
+[2024-06-24 11:48:26]	[done]
+	build successfully !
+
+[2024-06-24 11:48:41]	[done]
+	build successfully !
+
+[2024-06-24 11:51:58]	[done]
+	build successfully !
+
+[2024-06-24 11:55:33]	[done]
+	build successfully !
+
+[2024-06-24 11:57:41]	[done]
+	build successfully !
+
+[2024-06-24 11:57:57]	[done]
+	build successfully !
+
+[2024-06-24 11:58:24]	[done]
+	build successfully !
+
+[2024-06-24 11:59:54]	[done]
+	build successfully !
+
+[2024-06-24 12:01:19]	[done]
+	build successfully !
+
+[2024-06-24 12:01:55]	[done]
+	build successfully !
+
+[2024-06-24 12:02:22]	[done]
+	build successfully !
+
+[2024-06-24 12:03:13]	[done]
+	build successfully !
+
+[2024-06-24 12:04:34]	[done]
+	build successfully !
+
+[2024-06-24 12:05:23]	[done]
+	build successfully !
+
+[2024-06-24 12:05:50]	[done]
+	build successfully !
+
+[2024-06-24 12:06:21]	[done]
+	build successfully !
+
+[2024-06-24 12:07:43]	[done]
+	build successfully !
+
+[2024-06-24 12:08:00]	[done]
+	build successfully !
+
+[2024-06-24 12:09:06]	[done]
+	build successfully !
+
+[2024-06-24 12:09:43]	[done]
+	build successfully !
+
+[2024-06-24 12:10:32]	[done]
+	build successfully !
+
+[2024-06-24 12:11:20]	[done]
+	build successfully !
+
+[2024-06-24 12:17:38]	[done]
+	build successfully !
+
+[2024-06-24 12:18:12]	[done]
+	build successfully !
+
+[2024-06-24 12:20:01]	[done]
+	build successfully !
+
+[2024-06-24 12:35:04]	[done]
+	build successfully !
+
+[2024-06-24 12:37:27]	[done]
+	build successfully !
+
+[2024-06-24 12:40:05]	[done]
+	build successfully !
+
+[2024-06-24 12:41:04]	[done]
+	build successfully !
+
+[2024-06-25 22:10:29]	[done]
+	build successfully !
+
+[2024-06-25 22:10:59]	[done]
+	build successfully !
+
+[2024-06-25 22:17:24]	[done]
+	build successfully !
+
+[2024-06-25 22:18:57]	[done]
+	build successfully !
+
+[2024-06-25 22:20:12]	[done]
+	build successfully !
+
+[2024-06-25 22:24:06]	[done]
+	build successfully !
+
+[2024-06-25 22:25:08]	[done]
+	build successfully !
+
+[2024-06-25 22:26:24]	[done]
+	build successfully !
+
+[2024-06-25 22:27:25]	[done]
+	build successfully !
+
+[2024-06-25 22:32:13]	[done]
+	build successfully !
+
+[2024-06-25 22:33:29]	[done]
+	build successfully !
+
+[2024-06-25 22:34:05]	[done]
+	build successfully !
+
+[2024-06-25 22:34:43]	[done]
+	build successfully !
+
+[2024-06-25 22:35:21]	[done]
+	build successfully !
+
+[2024-06-25 22:37:43]	[done]
+	build successfully !
+
+[2024-06-25 22:38:55]	[done]
+	build successfully !
+
+[2024-06-25 22:40:35]	[done]
+	build successfully !
+
+[2024-06-25 22:43:42]	[done]
+	build successfully !
+
+[2024-06-25 22:46:08]	[done]
+	build successfully !
+
+[2024-06-25 22:47:18]	[done]
+	build successfully !
+
+[2024-06-25 22:50:55]	[done]
+	build successfully !
+
+[2024-06-25 22:52:52]	[done]
+	build successfully !
+
+[2024-06-25 22:53:33]	[done]
+	build successfully !
+
+[2024-06-25 22:54:13]	[done]
+	build successfully !
+
+[2024-06-25 22:55:17]	[done]
+	build successfully !
+
+[2024-06-25 22:56:09]	[done]
+	build successfully !
+
+[2024-06-25 22:59:27]	[done]
+	build successfully !
+
+[2024-06-25 23:00:30]	[done]
+	build successfully !
+
+[2024-06-25 23:00:58]	[done]
+	build successfully !
+
+[2024-06-25 23:03:15]	[done]
+	build successfully !
+
+[2024-06-25 23:04:03]	[done]
+	build successfully !
+
+[2024-06-25 23:06:59]	[done]
+	build successfully !
+
+[2024-06-25 23:08:08]	[done]
+	build successfully !
+
+[2024-06-25 23:08:33]	[done]
+	build successfully !
+
+[2024-06-25 23:09:12]	[done]
+	build successfully !
+
+[2024-06-25 23:09:23]	[done]
+	build successfully !
+
+[2024-06-25 23:12:25]	[done]
+	build successfully !
+
+[2024-06-25 23:13:51]	[done]
+	build successfully !
+
+[2024-06-25 23:14:33]	[done]
+	build successfully !
+
+[2024-06-25 23:16:21]	[done]
+	build successfully !
+
+[2024-06-25 23:17:07]	[done]
+	build successfully !
+
+[2024-06-25 23:19:05]	[done]
+	build successfully !
+
+[2024-06-25 23:19:31]	[done]
+	build successfully !
+
+[2024-06-25 23:20:14]	[done]
+	build successfully !
+
+[2024-06-25 23:21:17]	[done]
+	build successfully !
+
+[2024-06-25 23:22:01]	[done]
+	build successfully !
+
+[2024-06-25 23:22:27]	[done]
+	build successfully !
+
+[2024-06-25 23:23:08]	[done]
+	build successfully !
+
+[2024-06-25 23:24:30]	[done]
+	build successfully !
+
+[2024-06-25 23:26:04]	[done]
+	build successfully !
+
+[2024-06-25 23:28:27]	[done]
+	build successfully !
+
+[2024-06-25 23:29:45]	[done]
+	build successfully !
+
+[2024-06-25 23:31:06]	[done]
+	build successfully !
+
+[2024-06-25 23:32:03]	[done]
+	build successfully !
+
+[2024-06-25 23:32:40]	[done]
+	build successfully !
+
+[2024-06-25 23:34:30]	[done]
+	build successfully !
+
+[2024-06-25 23:35:04]	[done]
+	build successfully !
+
+[2024-06-25 23:35:45]	[done]
+	build successfully !
+
+[2024-06-25 23:36:13]	[done]
+	build successfully !
+
+[2024-06-25 23:37:06]	[done]
+	build successfully !
+
+[2024-06-25 23:37:51]	[done]
+	build successfully !
+
+[2024-06-25 23:39:19]	[done]
+	build successfully !
+
+[2024-06-25 23:39:26]	[done]
+	build successfully !
+
+[2024-06-25 23:43:01]	[done]
+	build successfully !
+
+[2024-06-25 23:43:12]	[done]
+	build successfully !
+
+[2024-06-25 23:44:49]	[done]
+	build successfully !
+
+[2024-06-25 23:45:19]	[done]
+	build successfully !
+
+[2024-06-25 23:45:43]	[done]
+	build successfully !
+
+[2024-06-25 23:46:02]	[done]
+	build successfully !
+
+[2024-06-25 23:46:24]	[done]
+	build successfully !
+
+[2024-06-25 23:47:25]	[done]
+	build successfully !
+
+[2024-06-25 23:48:38]	[done]
+	build successfully !
+
+[2024-06-25 23:49:22]	[done]
+	build successfully !
+
+[2024-06-25 23:51:11]	[done]
+	build successfully !
+
+[2024-06-25 23:52:28]	[done]
+	build successfully !
+
+[2024-06-25 23:53:40]	[done]
+	build successfully !
+
+[2024-06-25 23:54:26]	[done]
+	build successfully !
+
+[2024-06-25 23:55:19]	[done]
+	build successfully !
+
+[2024-06-25 23:55:45]	[done]
+	build successfully !
+
+[2024-06-25 23:56:00]	[done]
+	build successfully !
+
+[2024-06-25 23:57:30]	[done]
+	build successfully !
+
+[2024-06-25 23:57:35]	[done]
+	build successfully !
+
+[2024-06-25 23:59:24]	[done]
+	build successfully !
+
+[2024-06-25 23:59:59]	[done]
+	build successfully !
+
+[2024-06-26 00:00:35]	[done]
+	build successfully !
+
+[2024-06-26 00:00:42]	[done]
+	build successfully !
+
+[2024-06-26 00:01:23]	[done]
+	build successfully !
+
+[2024-06-26 00:01:38]	[done]
+	build successfully !
+
+[2024-06-26 00:02:06]	[done]
+	build successfully !
+
+[2024-06-26 00:02:34]	[done]
+	build successfully !
+
+[2024-06-26 00:02:38]	[done]
+	build successfully !
+
+[2024-06-26 00:02:58]	[done]
+	build successfully !
+
+[2024-06-26 00:04:20]	[done]
+	build successfully !
+
+[2024-06-26 00:04:28]	[done]
+	build successfully !
+
+[2024-06-26 00:05:03]	[done]
+	build successfully !
+
+[2024-06-26 00:05:42]	[done]
+	build successfully !
+
+[2024-06-26 00:06:27]	[done]
+	build successfully !
+
+[2024-06-26 00:08:27]	[done]
+	build successfully !
+
+[2024-06-26 00:11:15]	[done]
+	build successfully !
+
+[2024-06-26 00:11:39]	[done]
+	build successfully !
+
+[2024-06-26 00:13:28]	[done]
+	build successfully !
+
+[2024-06-26 00:23:04]	[done]
+	build successfully !
+
+[2024-06-26 00:25:00]	[done]
+	build successfully !
+
+[2024-06-26 00:26:08]	[done]
+	build successfully !
+
+[2024-06-26 00:27:16]	[done]
+	build successfully !
+
+[2024-06-26 00:35:53]	[done]
+	build successfully !
+
+[2024-06-26 00:37:36]	[done]
+	build successfully !
+
+[2024-06-26 00:37:51]	[done]
+	build successfully !
+
+[2024-06-26 00:39:39]	[done]
+	build successfully !
+
+[2024-06-26 00:39:51]	[done]
+	build successfully !
+
+[2024-06-26 00:41:23]	[done]
+	build successfully !
+
+[2024-06-26 00:41:33]	[done]
+	build successfully !
+
+[2024-06-26 00:42:41]	[done]
+	build successfully !
+
+[2024-06-26 00:43:12]	[done]
+	build successfully !
+
+[2024-06-26 00:44:05]	[done]
+	build successfully !
+
+[2024-06-26 00:44:20]	[done]
+	build successfully !
+
+[2024-06-26 00:45:02]	[done]
+	build successfully !
+
+[2024-06-26 00:45:11]	[done]
+	build successfully !
+
+[2024-06-26 00:45:42]	[done]
+	build successfully !
+
+[2024-06-26 00:46:21]	[done]
+	build successfully !
+
+[2024-06-26 00:46:37]	[done]
+	build successfully !
+
+[2024-06-26 00:47:39]	[done]
+	build successfully !
+
+[2024-06-26 00:48:40]	[done]
+	build successfully !
+
+[2024-06-26 00:49:38]	[done]
+	build successfully !
+
+[2024-06-26 00:50:02]	[done]
+	build successfully !
+
+[2024-06-26 00:53:27]	[done]
+	build successfully !
+
+[2024-06-26 01:07:59]	[done]
+	build successfully !
+
+[2024-06-26 01:08:02]	[done]
+	build successfully !
+
+[2024-06-26 01:09:22]	[done]
+	build successfully !
+
+[2024-06-26 01:14:45]	[done]
+	build successfully !
+
+[2024-06-26 01:15:00]	[done]
+	build successfully !
+
+[2024-06-26 01:16:16]	[done]
+	build successfully !
+
+[2024-06-26 01:16:53]	[done]
+	build successfully !
+
+[2024-06-26 01:21:07]	[done]
+	build successfully !
+
+[2024-06-26 01:21:10]	[done]
+	build successfully !
+
+[2024-06-26 01:22:38]	[done]
+	build successfully !
+
+[2024-06-26 01:25:28]	[done]
+	build successfully !
+
+[2024-06-26 01:29:20]	[done]
+	build successfully !
+
+[2024-06-26 01:33:52]	[done]
+	build successfully !
+
+[2024-06-26 01:36:34]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\USB_DEVICE\App\usbd_audio_if.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/USB_DEVICE/App/usbd_audio_if.o -MMD ./USB_DEVICE/App/usbd_audio_if.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./USB_DEVICE/App/usbd_audio_if.c: In function 'Recieve_FS':
+./USB_DEVICE/App/usbd_audio_if.c:290:32: error: 'pdev' undeclared (first use in this function)
+  290 |   (void)USBD_LL_PrepareReceive(pdev, AUDIOOutEpAdd,
+      |                                ^~~~
+./USB_DEVICE/App/usbd_audio_if.c:290:32: note: each undeclared identifier is reported only once for each function it appears in
+./USB_DEVICE/App/usbd_audio_if.c:290:38: error: 'AUDIOOutEpAdd' undeclared (first use in this function)
+  290 |   (void)USBD_LL_PrepareReceive(pdev, AUDIOOutEpAdd,
+      |                                      ^~~~~~~~~~~~~
+./USB_DEVICE/App/usbd_audio_if.c:291:32: error: 'haudio' undeclared (first use in this function); did you mean 'haud'?
+  291 |                                haudio->rx_buffer,
+      |                                ^~~~~~
+      |                                haud
+
+[2024-06-26 01:37:00]	compilation failed at : "c:\Users\17802\source\repos\AllianceForwardingDevice\USB_DEVICE\App\usbd_audio_if.c", exit code: 1
+command: 
+  "C:\Users\17802\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe" -c -xc -mthumb -std=c11 -I. -ICore/Inc -IUSB_DEVICE/App -IUSB_DEVICE/Target -IDrivers/STM32F4xx_HAL_Driver/Inc -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy -IMiddlewares/ST/STM32_USB_Device_Library/Core/Inc -IDrivers/CMSIS/Device/ST/STM32F4xx/Include -IDrivers/CMSIS/Include -IMiddlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding -IMiddlewares/ST/STM32_USB_Device_Library/Class/AllianceForwarding/Inc -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -mfloat-abi=soft -mcpu=cortex-m4 -O0 -Wall -g -ffunction-sections -fdata-sections -o ./build/Debug/.obj/USB_DEVICE/App/usbd_audio_if.o -MMD ./USB_DEVICE/App/usbd_audio_if.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./USB_DEVICE/App/usbd_audio_if.c: In function 'Recieve_FS':
+./USB_DEVICE/App/usbd_audio_if.c:291:32: error: 'haudio' undeclared (first use in this function); did you mean 'haud'?
+  291 |                                haudio->rx_buffer,
+      |                                ^~~~~~
+      |                                haud
+./USB_DEVICE/App/usbd_audio_if.c:291:32: note: each undeclared identifier is reported only once for each function it appears in
+
+[2024-06-26 01:37:05]	[done]
+	build successfully !
+
+[2024-06-26 01:38:52]	[done]
+	build successfully !
+
+[2024-06-26 01:39:52]	[done]
+	build successfully !
+
+[2024-06-26 01:40:09]	[done]
+	build successfully !
+
+[2024-06-26 01:41:12]	[done]
+	build successfully !
+
+[2024-06-26 01:41:31]	[done]
+	build successfully !
+
+[2024-06-26 01:42:23]	[done]
+	build successfully !
+
+[2024-06-26 01:42:40]	[done]
+	build successfully !
+
+[2024-06-26 01:44:13]	[done]
+	build successfully !
+
+[2024-06-26 01:55:50]	[done]
+	build successfully !
+
